@@ -1,2 +1,2 @@
-# TaskWorkshop1
+# Workshop1
 Console program for managing tasks.
