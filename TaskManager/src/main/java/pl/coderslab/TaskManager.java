@@ -19,6 +19,10 @@ public class TaskManager {
 
     static String[][] tasks()  {
         Path path = Paths.get("tasks.csv");
+        if (!Files.exists(path)) {
+            System.out.println("File not exist.");
+            System.exit(0);
+        }
         String[][] tasksTab = null;
         try {
             int numOfLines = Files.readAllLines(path).size();
